@@ -3,6 +3,7 @@ set :repo_url, "git@github.com:mohsin-laeeque/ruby-panel.git"
 
 # Deploy to the user's home directory
 set :deploy_to, "/home/arhamsoft/#{fetch :application}"
+set :passenger_in_gemfile, "true"
 
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
 
