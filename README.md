@@ -67,6 +67,10 @@ bundle install
 *  Use this to download install and zip file https://dev.mysql.com/downloads/mysql/
 *  Use lib file of mysql-zip from ruby directory in mysql folder.
 *  Run this command gem install mysql2 --, '--with-mysql-lib="C:\mysql2\lib"  --with-mysql-include="C:\mysql2\include"'
+*  rails generate model Publisher first_name:string  last_name:string email:strin gander: strind country:string city:string address:string  dob:data age:integer
+*  rails generate controller Publishers index show new create edit update destroy
+*  rails g model articles act_header act_body act_type publish_date:date  publisher:references
+*  rails g model documents name doc_type article:references
 
 
 This README would normally document whatever steps are necessary to get the
