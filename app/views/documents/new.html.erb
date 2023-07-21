@@ -2,9 +2,13 @@
     <div class="card">
         <div class="card-header">
             <h2 class="text-center">Attach Documents   </h2>
-            <p><%= @employee_id %> sfsfff</p>
+            <p><%= @employee_id %></p>
         </div>
-        <%= flash[:notice] %>
+        <% if flash[:notice] %>
+             <div class="alert alert-primary" role="alert">
+                 <%= flash[:notice] %>
+             </div>
+         <% end %>
         <div class="card-body">
            <%= render 'form', document: @document %>
         </div>
