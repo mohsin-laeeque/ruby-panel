@@ -21,13 +21,13 @@ jobs:
           name: github-actions
           known_hosts: 'random-placeholder-value-replaced-by-keyscan-below'
           config: |
-            host 192.168.27.10
+            host 202.166.170.106
               IdentityFile ~/.ssh/github-actions
               IdentitiesOnly yes
               ForwardAgent yes
 
       - name: Adding Known Hosts
-        run: ssh-keyscan -H ${{ secrets.SSH_HOST }}
+        run: ssh-keyscan -p 1022 ${{ secrets.SSH_HOST}}
 
       - uses: actions/checkout@v2
       - name: Set up Ruby

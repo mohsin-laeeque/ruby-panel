@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
     def hello
-        render html: "Hello, Ruby! Deployed to Ruby Application"
+        render html: "Hello, Ruby! Fresh Development"
     end
 end
